@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Catálogo de Medios</title>
+</head>
+<body>
+  <header>
+    <h1>Catálogo de Medios</h1>
+    <nav>
+      <ul>
+        <li><a href="canales.html" onclick="loadContent('canales')">Canales en Vivo</a></li>
+        <li><a href="#" onclick="loadContent('peliculas')">Películas</a></li>
+        <li><a href="series.html" onclick="loadContent('series')">Series</a></li>
+        <li><a href="radio.html" onclick="loadContent('radio')">Radio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2 id="welcome-message">Bienvenido a Mi Cine</h2>
+      <p>Explora una amplia variedad de contenido multimedia, desde canales en vivo hasta películas, series y radio. Todo en un solo lugar.</p>
+    </section>
+
+    <section id="examples">
+      <h2>Ejemplos de Contenido</h2>
+      <div class="example-item">
+        <img src="https://via.placeholder.com/150" alt="Canales en Vivo">
+        <h3>Canales en Vivo</h3>
+        <p>Disfruta de tus canales favoritos en vivo, incluyendo deportes, noticias y entretenimiento.</p>
+      </div>
+      <div class="example-item">
+        <img src="https://via.placeholder.com/150" alt="Películas">
+        <h3>Películas</h3>
+        <p>Mira las últimas películas y clásicos de todos los tiempos en alta definición.</p>
+      </div>
+      <div class="example-item">
+        <img src="https://via.placeholder.com/150" alt="Series">
+        <h3>Series</h3>
+        <p>Sigue tus series favoritas y descubre nuevas temporadas y episodios.</p>
+      </div>
+      <div class="example-item">
+        <img src="https://via.placeholder.com/150" alt="Radio">
+        <h3>Radio</h3>
+        <p>Escucha estaciones de radio de todo el mundo con una gran variedad de géneros musicales.</p>
+      </div>
+    </section>
+
+    <div id="reproductor">
+      <h2>Reproductor</h2>
+      <iframe id="video" width="600" height="400" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="contenido">
+      <h2>Selecciona un contenido</h2>
+      <p>Haz clic en el menú para ver los canales, películas o series.</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mi Cine. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function loadContent(content) {
+        const video = document.getElementById('video');
+        switch(content) {
+            case 'canales':
+                video.src = 'https://la12hd.com/vivo/canal.php?stream=foxsports';
+                break;
+            case 'peliculas':
+                video.src = 'https://example.com/peliculas';
+                break;
+            case 'series':
+                video.src = 'https://example.com/series';
+                break;
+            case 'radio':
+                video.src = 'https://example.com/radio';
+                break;
+            default:
+                video.src = '';
+        }
+    }
+
+    // Recuperar el nombre del localStorage y mostrarlo en la bienvenida
+    document.addEventListener('DOMContentLoaded', function() {
+        const nombre = localStorage.getItem('nombre');
+        if (nombre) {
+            document.getElementById('welcome-message').textContent = `Bienvenido, ${nombre}`;
+        }
+    });
+  </script>
+</body>
+</html>

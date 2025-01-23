@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Canales</title>
+</head>
+
+<body class="canales-page">
+    <header>
+        <a href="home.html" class="back-button">Volver</a>
+        <h1>Canales</h1>
+        <input type="text" id="search-bar" placeholder="Buscar canales..." onkeyup="filterCanales()">
+    </header>
+    <main>
+        <h2 class="canal-deportes-text">Canales de Deportes</h2>
+        <div class="canales-container" id="deportes-container">
+            <!-- Los canales de deportes se cargarán aquí dinámicamente -->
+        </div>
+        <h2 class="canal-television-text">Canales de Televisión</h2>
+        <div class="canales-container" id="television-container">
+            <!-- Los canales de televisión se cargarán aquí dinámicamente -->
+        </div>
+        <h2 class="canal-entretenimiento-text">Entretenimiento</h2>
+        <div class="canales-container" id="entretenimiento-container">
+            <!-- Los canales de deportes se cargarán aquí dinámicamente -->
+        </div>
+    </main>
+    <script src="js/canales.js"></script>
+</body>
+
+</html>

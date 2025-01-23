@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin - Agregar Contenido</title>
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: linear-gradient(135deg, #1a2134, #3a3f58);
+            color: #f2ddcc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .admin-container {
+            background-color: #2a2f45;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+
+        .admin-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .admin-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .admin-container input, .admin-container select, .admin-container textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+        }
+
+        .admin-container button {
+            background-color: #ff4081;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .admin-container button:hover {
+            background-color: #e03570;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Agregar Contenido</h1>
+        <form id="contentForm">
+            <input type="text" id="title" placeholder="Título" required>
+            <input type="text" id="img" placeholder="URL de la Imagen" required>
+            <textarea id="detail" placeholder="Descripción" required></textarea>
+            <input type="text" id="url" placeholder="URL del Contenido" required>
+            <select id="category" required>
+                <option value="">Seleccionar Categoría</option>
+                <option value="series">Series</option>
+                <option value="canales">Canales</option>
+                <option value="radios">Radios</option>
+                <option value="peliculas">Películas</option>
+            </select>
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('contentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const title = document.getElementById('title').value;
+            const img = document.getElementById('img').value;
+            const detail = document.getElementById('detail').value;
+            const url = document.getElementById('url').value;
+            const category = document.getElementById('category').value;
+
+            const newContent = {
+                title,
+                img,
+                detail,
+                url,
+                category
+            };
+
+            fetch('data/contenido.json')
+                .then(response => response.json())
+                .then(data => {
+                    data[category].push(newContent);
+                    return fetch('data/contenido.json', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    });
+                })
+                .then(() => {
+                    alert('Contenido agregado exitosamente');
+                    document.getElementById('contentForm').reset();
+                })
+                .catch(error => console.error('Error al agregar contenido:', error));
+        });
+    </script>
+</body>
+</html>

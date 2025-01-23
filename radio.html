@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Radio</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .radio-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+            position: relative;
+        }
+        .radio-container h1 {
+            margin-bottom: 20px;
+            color: #ff4081;
+        }
+        .radio-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s;
+        }
+        .radio-option:hover {
+            background-color: #e0e0e0;
+        }
+        .radio-option img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .radio-option a {
+            color: #ff4081;
+            text-decoration: none;
+            font-size: 18px;
+            flex-grow: 1;
+        }
+        .radio-option a:hover {
+            text-decoration: underline;
+        }
+        .radio-option audio {
+            margin-left: 15px;
+        }
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ff4081;
+            color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .back-button:hover {
+            background-color: #e03570;
+        }
+    </style>
+</head>
+<body>
+    <div class="radio-container">
+        <a href="home.html" class="back-button">Volver</a>
+        <h1>Estaciones de Radio</h1>
+        <div class="radio-option">
+            <img src="https://streaminglocucionar.com/portal/images/logos/radioeco971.png" alt="Radio Eco 97.1">
+            <a href="#">Radio Eco 97.1</a>
+            <audio controls>
+                <source src="http://streaming6.locucionar.com:24064/stream" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+        <div class="radio-option">
+            <img src="img/estacion2.png" alt="Estación 2">
+            <a href="#">Estación 2</a>
+            <audio controls>
+                <source src="audio/estacion2.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+        <div class="radio-option">
+            <img src="img/estacion3.png" alt="Estación 3">
+            <a href="#">Estación 3</a>
+            <audio controls>
+                <source src="audio/estacion3.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+    </div><br>
+    
+</body>
+</html>
