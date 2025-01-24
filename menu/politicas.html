@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Política de Privacidad - Mi Cine</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: rgb(16 21 36);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2.5em;
+            color: rgb(242 221 204);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            animation: fadeInUp 2s ease-in-out;
+            max-width: 700px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 50px;
+            text-align: center;
+            font-size: 1.5em;
+            color: #f2ddcc;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 2s ease-in-out;
+            cursor: pointer;
+            position: relative;
+            padding-right: 20px;
+        }
+
+        .section-title::after {
+            content: '▼';
+            position: absolute;
+            right: 10;
+            transition: transform 0.5s ease;
+        }
+
+        .section-title.active::after {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            display: none;
+            background-color: #1a2134;
+            color: #77809f;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 1.1em;
+            animation: fadeIn 2s ease-in-out;
+            padding: 10px;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 1s ease, opacity 1s ease;
+        }
+
+        .section-content.show {
+            display: block;
+            max-height: 500px;
+            /* Adjust as needed */
+            opacity: 1;
+        }
+
+        .update-info {
+            margin-top: 20px;
+            font-style: italic;
+            text-align: center;
+            font-size: 1.1em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .back-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #1a2134;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.5s ease, transform 0.5s ease;
+        }
+
+        .back-button:hover {
+            background-color: #232c46;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Política de Privacidad - Mi Cine</h1>
+    <p>En Mi Cine, valoramos y protegemos tu privacidad. Esta política detalla cómo recopilamos, usamos y protegemos tu
+        información mientras disfrutas de películas, series, canales en vivo y radio en nuestra plataforma.</p>
+
+    <div class="section-title" onclick="toggleSection('section1')">Recopilación de Información</div>
+    <div id="section1" class="section-content">
+        <p>Recopilamos información básica como tu nombre, correo electrónico y datos de navegación para ofrecerte una
+            experiencia personalizada.</p>
+    </div>
+
+    <div class="section-title" onclick="toggleSection('section2')">Uso de la Información</div>
+    <div id="section2" class="section-content">
+        <ul>
+            <li>Mejorar nuestra plataforma y contenido.</li>
+            <li>Ofrecerte recomendaciones personalizadas.</li>
+            <li>Comunicarnos contigo sobre novedades, actualizaciones y soporte.</li>
+        </ul>
+    </div>
+
+    <div class="section-title" onclick="toggleSection('section3')">Protección de Datos</div>
+    <div id="section3" class="section-content">
+        <p>Implementamos medidas de seguridad avanzadas para garantizar que tu información esté protegida y no se
+            comparta
+            con terceros sin tu consentimiento, salvo en casos legales.</p>
+    </div>
+
+    <div class="section-title" onclick="toggleSection('section4')">Cookies</div>
+    <div id="section4" class="section-content">
+        <p>Utilizamos cookies para mejorar tu experiencia de usuario. Puedes desactivarlas desde la configuración de tu
+            navegador, aunque esto podría limitar algunas funciones.</p>
+    </div>
+
+    <div class="section-title" onclick="toggleSection('section5')">Tus Derechos</div>
+    <div id="section5" class="section-content">
+        <p>Tienes derecho a acceder, actualizar o eliminar tus datos personales en cualquier momento.</p>
+    </div>
+
+    <div class="update-info">Última actualización: 21/01/25</div>
+
+    <p>Gracias por confiar en Mi Cine. Disfruta del mejor contenido en un solo lugar.</p>
+
+    <button class="back-button" onclick="window.history.back()">Volver Atras</button>
+
+    <script>
+        function toggleSection(id) {
+            var sections = document.querySelectorAll('.section-content');
+            var titles = document.querySelectorAll('.section-title');
+            sections.forEach(function (section) {
+                if (section.id !== id) {
+                    section.classList.remove('show');
+                    section.previousElementSibling.classList.remove('active');
+                }
+            });
+            var section = document.getElementById(id);
+            var title = section.previousElementSibling;
+            if (section.classList.contains('show')) {
+                section.classList.remove('show');
+                title.classList.remove('active');
+            } else {
+                section.classList.add('show');
+                title.classList.add('active');
+            }
+        }
+    </script>
+</body>
+
+</html>

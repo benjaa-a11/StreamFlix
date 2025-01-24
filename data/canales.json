@@ -1,0 +1,245 @@
+{
+    "canales": [
+        {
+            "id": "tnt-sports",
+            "title": "TNT Sports",
+            "img": "https://television-libre.net//img/tntar.svg",
+            "detail": "TNT Sports es un servicio de suscripción mensual de streaming donde podés ver los partidos de la Liga Profesional de Fútbol, las mejores noticias del deporte argentino y todo lo que pasa en el plano internacional: Acceso a partidos de la Liga Argentina en Vivo.",
+            "url": "https://television-libre.net/html/fl/?get=VE5UX1Nwb3J0c19IRA",
+            "category": "deportes"
+        },
+        {
+            "id": "tyc-sports",
+            "title": "Tyc Sports",
+            "img": "https://television-libre.net//img/tyc.webp",
+            "detail": "TyC Sports es un canal de televisión por suscripción argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional",
+            "url": "https://television-libre.net/html/fl/?get=VHlDU3BvcnQ",
+            "category": "deportes"
+        },
+        {
+            "id": "espn-premium",
+            "title": "Espn Premium",
+            "img": "https://television-libre.net/img/espnpr.webp",
+            "detail": "ESPN Premium es un canal de televisión por suscripción premium argentino dedicado a la transmisión específicamente del fútbol de ese país, junto con TNT Sports tras la alianza Fox-Turner para la televisación del fútbol argentino, el cual reemplaza al programa público Fútbol Para Todos.",
+            "url": "https://television-libre.net/html/fl/?get=Rm94X1Nwb3J0c19QcmVtaXVuX0hE",
+            "category": "deportes"
+        },
+        
+        {
+            "id": "espn",
+            "title": "Espn",
+            "img": "https://television-libre.net/img/espn.webp",
+            "detail": "ESPN, es un grupo de canales de televisión por suscripción estadounidense especializado en los deportes propiedad de ESPN Inc.",
+            "url": "https://television-libre.net/html/fl/?get=RVNQTjJIRA",
+            "category": "deportes"
+        },
+        {
+            "id": "fox-sports",
+            "title": "Fox Sports 1",
+            "img": "https://television-libre.net/img/foxsports.png",
+            "detail": "Fox Sports es un canal de televisión muy popular entre los fanáticos del deporte. Transmite una gran variedad de eventos deportivos, desde fútbol y béisbol hasta la NBA y la UFC. ¡Siempre hay algo emocionante para ver!",
+            "url": "https://television-libre.net/html/fl/?get=Rm94U3BvcnRz",
+            "category": "deportes"
+        },
+        {
+            "id": "fox-sports-2",
+            "title": "Fox Sports 2",
+            "img": "https://television-libre.net/img/foxsports2.png",
+            "detail": "El Canal 11 de Buenos Aires es una estación de televisión abierta argentina que transmite desde la ciudad de Buenos Aires. La emisora se llega a ver en todo el Gran Buenos Aires y zonas aledañas.",
+            "url": "https://television-libre.net/html/fl/?get=VGVsZWZlSEQ=",
+            "category": "deportes"
+        },
+        {
+            "id": "fox-sports-3",
+            "title": "Fox Sports 3",
+            "img": "https://television-libre.net/img/foxsports3.png",
+            "detail": "El Canal 11 de Buenos Aires es una estación de televisión abierta argentina que transmite desde la ciudad de Buenos Aires. La emisora se llega a ver en todo el Gran Buenos Aires y zonas aledañas.",
+            "url": "https://television-libre.net/html/fl/?get=VGVsZWZlSEQ=",
+            "category": "deportes"
+        },
+        {
+            "id": "dsports",
+            "title": "DSports",
+            "img": "https://television-libre.net/img/dsports.webp",
+            "detail": "DSports, es un canal de televisión por suscripción deportivo latinoamericano. Es exclusivo de la proveedora satelital DirecTV. Los programas del canal son producidos por Torneos.",
+            "url": "https://streamtp2.com/global1.php?stream=dsports",
+            "category": "deportes"
+        },
+        {
+            "id": "dsports-2",
+            "title": "DSports 2",
+            "img": "https://television-libre.net/img/dsports2.webp",
+            "detail": "DSports 2, es un canal de televisión por suscripción deportivo latinoamericano, exclusivo de la operadora de televisión satelital DirecTV. Es la segunda señal de DSports, por lo que también es canal hermano de DSports+.",
+            "url": "https://la12hd.com/vivo/canal.php?stream=dsports2",
+            "category": "deportes"
+        },
+        {
+            "id": "dsports-plus",
+            "title": "DSports Plus",
+            "img": "https://television-libre.net/img/dsports.webp",
+            "detail": "DSports+, es un canal de televisión por suscripción deportivo exclusivo del sistema de televisión satelital DirecTV. Fue lanzado el 16 de agosto de 2013.",
+            "url": "https://streamtp2.com/global1.php?stream=dsports_plus",
+            "category": "deportes"
+        },
+        {
+            "id": "telefe",
+            "title": "Telefe",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Telefe_%28nuevo_logo%29.png/320px-Telefe_%28nuevo_logo%29.png",
+            "detail": "El Canal 11 de Buenos Aires es una estación de televisión abierta argentina que transmite desde la ciudad de Buenos Aires. La emisora se llega a ver en todo el Gran Buenos Aires y zonas aledañas.",
+            "url": "https://television-libre.net/html/fl/?get=VGVsZWZlSEQ=",
+            "category": "television"
+        },          
+        {
+            "id": "el-trece",
+            "title": "El Trece",
+            "img": "https://television-libre.net/img/eltrece.webp",
+            "detail": "El Canal 13 es una estación de televisión abierta argentina que transmite desde la ciudad de Buenos Aires. La emisora se llega a ver en todo el Gran Buenos Aires y zonas aledañas.",
+            "url": "https://television-libre.net/html/fl/?get=RWxUcmVjZQ==",
+            "category": "television"
+        },
+        {
+            "id": "el-nueve",
+            "title": "El Nueve",
+            "img": "https://television-libre.net/img/nueve.webp",
+            "detail": "El Canal 9 de Buenos Aires, es una estación de televisión abierta argentino que transmite desde la Ciudad Autónoma de Buenos Aires. La emisora fue inaugurada el 9 de junio de 1960.",
+            "url": "https://television-libre.net/html/fl/?get=Q2FuYWw5&lang=1",
+            "category": "television"
+        },
+        {
+            "id": "tv-publica",
+            "title": "TV Pública",
+            "img": "https://television-libre.net/img/tvpublica.webp",
+            "detail": "El Canal 7 de Buenos Aires, más conocido como Televisión Pública y estilizado como TVP, es una estación de televisión abierta argentina que transmite desde la ciudad de Buenos Aires y que actúa como la emisora cabecera de la cadena de televisión pública de ese país.",
+            "url": "https://television-libre.net/html/fl/?get=Q2FuYWw3",
+            "category": "television"
+        },
+        {
+            "id": "america-tv",
+            "title": "América TV",
+            "img": "https://television-libre.net/img/america.webp",
+            "detail": "América TV es un canal de televisión abierta argentino con licencia en la ciudad de La Plata, aunque su señal es producida en la ciudad de Buenos Aires. Es también conocido por ser uno de los cinco canales abiertos que emiten desde el Área metropolitana de Buenos Aires.",
+            "url": "https://television-libre.net/html/fl/?get=QW1lcmljYVRW",
+            "category": "television"
+        },
+        {
+            "id": "tn",
+            "title": "TN",
+            "img": "https://television-libre.net/img/tn.png",
+            "detail": "Todo Noticias (también conocido por sus siglas TN) es un canal de televisión por suscripción argentino, perteneciente al Grupo Clarín y operado por su subsidiaria Arte Radiotelevisivo Argentino.",
+            "url": "https://television-libre.net/html/fl/?get=VG9kb05vdGljaWFz",
+            "category": "television"
+        },
+        {
+            "id": "la-nacion-+",
+            "title": "La Nación +",
+            "img": "https://television-libre.net/img/ln.webp",
+            "detail": "La Nación +, es un canal de televisión abierta argentino enfocado en la programación noticiosa, propiedad del diario conservador La Nación.",
+            "url": "https://television-libre.net/html/fl/?get=TGFfTmFjaW9u",
+            "category": "television"
+        },
+        {
+            "id": "rural",
+            "title": "Rural",
+            "img": "https://television-libre.net/img/rural.webp",
+            "detail": "Canal Rural es un canal de televisión por suscripción latinoamericano de origen argentino dedicado a la producción del campo, agroindustria y alimentos.",
+            "url": "https://nebunexa.co/canal/?id=RURAL",
+            "category": "television"
+        },
+        {
+            "id": "c5n",
+            "title": "C5N",
+            "img": "https://television-libre.net/img/c5n.webp",
+            "detail": "C5N es un canal de televisión por suscripción latinoamericano de origen estadounidense que transmite cine y series. Es propiedad de WarnerMedia y es operado por WarnerMedia International. Su programación se basa en la emisión de películas y series de televisión.",
+            "url": "https://television-libre.net/html/fl/?get=QzVO",
+            "category": "television"
+        },
+        {
+            "id": "cronica-tv",
+            "title": "Crónica TV",
+            "img": "https://television-libre.net/img/cronica.png",
+            "detail": "Crónica Televisión (conocido también como Crónica HD) es un canal de televisión abierta argentino orientado a las noticias, con su programación dedicada íntegramente a noticieros permanentes en vivo.",
+            "url": "https://television-libre.net/html/fl/?get=Q3JvbmljYVRW",
+            "category": "television"
+        },
+        {
+            "id": "star-channel",
+            "title": "Star Channel",
+            "img": "https://television-libre.net/img/star.webp",
+            "detail": "Star Channel (estilizado como ST★R Channel; y conocido anteriormente como Fox) es un canal de televisión por suscripción español, propiedad de The Walt Disney Company Spain & Portugal.1​ El canal se dedica a la emisión de cine y series internacionales de éxito.",
+            "url": "https://television-libre.net/html/fl/?get=Rk9YSEQ=",
+            "category": "entretenimiento"
+        },
+        {
+            "id": "comedy-central",
+            "title": "Comedy Central",
+            "img": "https://television-libre.net/img/comedy.webp",
+            "detail": "Comedy Central es un canal de televisión por suscripción latinoamericano de origen estadounidense, enfocado en la emisión de series y películas de comedia para toda la familia, tanto de producción extranjera como local.",
+            "url": "https://television-libre.net/html/fl/?get=Q29tZWR5Q2VudHJhbA",
+            "category": "entretenimiento"
+        },
+        {
+            "id": "aye",
+            "title": "A&E",
+            "img": "https://television-libre.net/img/ae.webp",
+            "detail": "A&E es un canal de televisión por suscripción latinoamericano de origen estadounidense, variante regional del canal original. Su programación se centraba en la emisión de biografías, documentales, y series, pero más tarde se expandió para incluir también telerrealidad.",
+            "url": "https://television-libre.net/html/fl/?get=QUVIRA==",
+            "category": "entretenimiento"
+        },
+        {
+            "id": "cinecanal",
+            "title": "Cinecanal",
+            "img": "https://television-libre.net/img/cinecanal.webp",
+            "detail": "Cinecanal es un canal de televisión por suscripción latinoamericano, inició sus transmisiones el 1 de abril de 1993. Es propiedad de The Walt Disney Company Latin America y operado por Disney Media Networks Latin America.",
+            "url": "https://television-libre.net/html/fl/?get=Q2luZWNhbmFsSEQ=",
+            "category": "entretenimiento"
+        },
+        {
+            "id": "tnt-hd",
+            "title": "TNT",
+            "img": "https://television-libre.net/img/tnt.webp",
+            "detail": "TNT es un canal de televisión por suscripción latinoamericano de origen estadounidense, variante regional del canal original, que inició sus operaciones el 28 de enero de 1991 y está orientado a la emisión de películas de cualquier género. Es propiedad de Warner Bros. Discovery y es operado por Warner Bros.",
+            "url": "https://television-libre.net/html/fl/?get=VE5UX0hEX0FyZw==",
+            "category": "entretenimiento"
+        },
+        {
+            "id": "tnt-series",
+            "title": "TNT Series",
+            "img": "https://television-libre.net/img/tntseries.webp",
+            "detail": "TNT Series es un canal de televisión por suscripción latinoamericano de origen estadounidense, señal hermana de TNT en Latinoamérica, lanzado en 2015. Es propiedad de Warner Bros. Discovery y es operado por Warner Bros. Discovery Latin America. Su programación se basa en series de acción, suspenso, dramáticas, policiales y de ciencia ficción.",
+            "url": "https://television-libre.net/html/fl/?get=VE5UU2VyaWVz",
+            "category": "entretenimiento"
+        },
+        {
+            "id": "warner-channel",
+            "title": "Warner Channel",
+            "img": "https://television-libre.net/img/warner.webp",
+            "detail": "Warner Channel, es un canal de televisión por suscripción latinoamericano de origen estadounidense operado por Warner Bros. Discovery Latin America, empresa filial perteneciente a Warner Bros. Discovery. Se unió al Consejo Latinoamericano de Publicidad en Multicanales (LAMAC) en 2004. Está centrado en emisión de series, comedia, películas y entretenimiento.",
+            "url": "https://television-libre.net/html/fl/?get=V2FybmVySEQ=",
+            "category": "entretenimiento"
+        },
+        {
+            "id": "hbo",
+            "title": "HBO",
+            "img": "https://television-libre.net/img/hbo.webp",
+            "detail": "HBO,  es una cadena de televisión por suscripción estadounidense, propiedad de Warner Bros. Discovery a través de su división Warner Bros. Entertainment. Es operada por Home Box Office, Inc., subsidiaria con sede en Nueva York. Su programación está basada en el estreno de películas ya exhibidas en cine y en películas y series de producción propia.",
+            "url": "https://television-libre.net/html/fl/?get=SEJPSEQ=",
+            "category": "entretenimiento"
+        },
+        {
+            "id": "paramount-network",
+            "title": "Paramount Network",
+            "img": "https://television-libre.net/img/paramount.webp",
+            "detail": "Paramount Network es un canal de televisión por suscripción latinoamericano de origen estadounidense que emite películas principalmente de la productora de cine Paramount Pictures y series. El canal es operado por Paramount Networks Americas, propiedad de Paramount Global.",
+            "url": "https://television-libre.net/html/fl/?get=UGFyYW1vdW50",
+            "category": "entretenimiento"
+        },
+        {
+            "id": "sony-chanell",
+            "title": "Sony Channel",
+            "img": "https://television-libre.net/img/sony.webp",
+            "detail": "Sony Channel es un canal de televisión por suscripción latinoamericano el cual emite series y películas.",
+            "url": "",
+            "category": "entretenimiento"
+        }
+    ]
+}

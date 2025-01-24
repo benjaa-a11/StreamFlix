@@ -1,0 +1,12 @@
+{
+    "canales": [
+        {
+            "id": "tnt-sports",
+            "title": "TNT Sports",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl5McC-sYxdM_H8-cu2rNJzWMFhAbIoCuo_g&s",
+            "detail": "TNT Sports es un servicio de suscripción mensual de streaming donde podés ver los partidos de la Liga Profesional de Fútbol, las mejores noticias del deporte argentino y todo lo que pasa en el plano internacional: Acceso a partidos de la Liga Argentina en Vivo.",
+            "url": "https://zonaaps.com/movies/culpa-mia/",
+            "category": "deportes"
+        }
+    ]
+}
