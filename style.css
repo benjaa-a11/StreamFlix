@@ -1,0 +1,564 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(135deg, #1a2134, #3a3f58);
+    color: #f2ddcc;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a2134;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f2ddcc;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .back-button {
+    color: #f2ddcc;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header .back-button:hover {
+    text-decoration: underline;
+}
+
+header #search-bar {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #f2ddcc;
+    background-color: #1a2134;
+    color: #f2ddcc;
+}
+
+header #search-bar::placeholder {
+    color: #f2ddcc;
+}
+
+main {
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e03570;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+#intro {
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.example-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.example-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.example-item:hover {
+    transform: scale(1.05);
+}
+
+#reproductor {
+    margin-bottom: 2rem;
+}
+
+#reproductor h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#contenido h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#contenido p {
+    font-size: 1rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para párrafos */
+p {
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Estilos para formularios */
+.ingresar-nombre {
+    color: #00CED1;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+input {
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    color: #333;
+    margin: 10px auto;
+    border: 1px solid #00CED1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #00BFFF;
+    box-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
+}
+
+/* Estilos para botones */
+.button-confirm {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+    background-color: #00CED1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-confirm:hover {
+    background-color: #00BFFF;
+    transform: scale(1.05);
+}
+
+/* Estilos para el pie de página */
+footer {
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center;
+    background-color: #00CED1;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease;
+}
+
+footer.dark-mode {
+    background-color: #444;
+}
+
+/* Estilos para imágenes */
+img {
+    display: block;
+    margin: 30px auto;
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para navegación */
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00CED1;
+    text-decoration: underline;
+}
+
+/* Estilos para el reproductor */
+.player {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+}
+
+.player video, .player iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.close-player {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.close-player:hover {
+    background: #e03570;
+}
+
+/* Estilos para contenedores de series */
+.series-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.series-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, max-height 0.5s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    max-height: 250px;
+}
+
+.series-item:hover {
+    transform: scale(1.05);
+}
+
+.series-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.series-item img:hover {
+    transform: scale(1.1);
+}
+
+.series-item h2 {
+    color: #ff4081;
+    margin: 15px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.series-info {
+    margin-top: 15px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    max-height: 0;
+}
+
+.series-info.show {
+    display: block;
+    opacity: 1;
+    max-height: 100%;
+}
+
+.series-info button {
+    background-color: #ff4081;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.series-info button:hover {
+    background-color: #e03570;
+}
+
+/* Estilos para contenedores de canales */
+.canales-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.canales-item {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, max-height 0.5s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    max-height: 250px;
+}
+
+.canales-item:hover {
+    transform: scale(1.05);
+}
+
+.canales-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.canales-item img:hover {
+    transform: scale(1.1);
+}
+
+.canales-item h2 {
+    color: #ecf0f1;
+    margin: 15px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.canales-info {
+    margin-top: 15px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    max-height: 0;
+}
+
+.canales-info.show {
+    display: block;
+    opacity: 1;
+    max-height: 100%;
+}
+
+.btn-btn-md {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-btn-md:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos específicos para canales.html */
+body.canales-page {
+    background-color: #34495e;
+    color: #ecf0f1;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideInDown 0.5s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.back-button {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.back-button:hover {
+    color: #e74c3c;
+}
+
+#search-bar {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    transition: width 0.4s ease-in-out;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+#search-bar:focus {
+    width: 300px;
+}
+
+.canal-deportes-text,
+.canal-television-text, .canal-entretenimiento-text {
+    background-color: #e74c3c;
+    display: block;
+    width: auto;
+    margin: 20px auto;
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: #ecf0f1;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.canales-item.expanded {
+    max-height: 1000px;
+}
+
+.canales-info {
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
