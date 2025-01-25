@@ -1,56 +1,53 @@
-// Cargar canales desde el archivo JSON
+// Cargar el archivo JSON con las películas
 fetch('data/peliculas.json')
-.then(response => response.json())
-.then(data => {
-    const deportesContainer = document.getElementById('deportes-container');
-    const televisionContainer = document.getElementById('television-container');
-    const entretenimientoContainer = document.getElementById('entretenimiento-container'); // Nuevo contenedor
-    data.canales.forEach(canal => {
-        const canalElement = document.createElement('div');
-        canalElement.className = 'canales-item';
-        canalElement.innerHTML = `
-            <img src="${canal.img}" alt="${canal.title}">
-            <h2>${canal.title}</h2>
-            <div class="canales-info">
-                <p>${canal.detail}</p>
-                <a href="peliculas-reproductor.html?url=${encodeURIComponent(canal.url)}" class="btn-btn-md">Ver</a>
-            </div>
-        `;
-        canalElement.addEventListener('click', () => toggleCanal(canalElement));
-        if (canal.category === 'deportes') {
-            deportesContainer.appendChild(canalElement);
-        } else if (canal.category === 'television') {
-            televisionContainer.appendChild(canalElement);
-        } else if (canal.category === 'entretenimiento') { // Nueva categoría
-            entretenimientoContainer.appendChild(canalElement);
-        }
-    });
-})
-.catch(error => console.error('Error al cargar los canales:', error));
+  .then((response) => response.json())
+  .then((data) => renderMovies(data))
+  .catch((error) => console.error('Error cargando el JSON:', error));
 
-// Función para filtrar canales
-function filterCanales() {
-    const searchTerm = document.getElementById('search-bar').value.toLowerCase();
-    const canales = document.querySelectorAll('.canales-item');
-    canales.forEach(canal => {
-        const title = canal.querySelector('h2').textContent.toLowerCase();
-        if (title.includes(searchTerm)) {
-            canal.style.display = '';
-        } else {
-            canal.style.display = 'none';
-        }
-    });
+// Función para renderizar las películas
+function renderMovies(movies) {
+  const resultContainer = document.getElementById('result');
+  
+  movies.forEach((movie) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    
+    card.innerHTML = `
+      <div class="card-content">
+        <div class="card-header">
+          <h3>${movie.title}</h3>
+        </div>
+        <div class="info">
+          <p>${movie.description}</p>
+          <button class="card-btn" onclick= href = ${movie.id}')">Ver película</button>
+        </div>
+      </div>
+    `;
+
+    resultContainer.appendChild(card);
+  });
 }
 
-// Función para expandir y colapsar canales
-function toggleCanal(selectedCanal) {
-    const canales = document.querySelectorAll('.canales-item');
-    canales.forEach(canal => {
-        if (canal !== selectedCanal) {
-            canal.classList.remove('expanded');
-            canal.querySelector('.canales-info').classList.remove('show');
-        }
-    });
-    selectedCanal.classList.toggle('expanded');
-    selectedCanal.querySelector('.canales-info').classList.toggle('show');
+// Función para redirigir al reproductor con la ID de la película
+function goToPlayer(movieId) {
+  window.location.href = `peliculas-reproductor.html?movieId=${movieId}`;
 }
+
+// Manejar el formulario de búsqueda
+document.getElementById('search-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const query = document.getElementById('search-input').value.trim().toLowerCase();
+  if (query) {
+    // Filtrar películas por título
+    fetch('data/peliculas.json')
+      .then((response) => response.json())
+      .then((data) => {
+        const filteredMovies = data.filter((movie) => movie.title.toLowerCase().includes(query));
+        renderMovies(filteredMovies);
+      })
+      .catch((error) => console.error('Error cargando el JSON:', error));
+  }
+});
+
+
+
