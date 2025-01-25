@@ -6,7 +6,10 @@
             "img": "https://tinyurl.com/2xvoeyd9",
             "detail": "La película Culpa Tuya retrata la intensa e inquebrantable relación de Noah y Nick, quienes intentan mantenerse juntos a pesar de las intenciones de sus padres y la aparición de viejas figuras del pasado que amenazan con destruir todo lo que ellos aman. ¿Podrán mantenerse juntos a pesar del nuevo trabajo de Noah y el ingreso a la universidad de Nick?",
             "url": "https://tinyurl.com/2a6oyera",
-            "category": "peliculas"
+            "category": "peliculas",
+            "genre": "Romance/Drama",
+            "rating": "5.2/10",
+            "releaseDate": "18/12/25"
         },
         {
             "id": "kung-fu-panda-3",
