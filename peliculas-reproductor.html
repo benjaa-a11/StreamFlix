@@ -3,23 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Reproductor de Peliculas</title>
+    <title>Reproductor de Películas</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #1e90ff;
+            font-size: 1.2rem;
+            text-decoration: none;
+            z-index: 10;
+        }
+
+        .back-button:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+            margin: 60px 0 30px; /* Incrementar el margen superior para separarlo del botón de volver */
+        }
+
+        .movie-details-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Logo de la película */
+        .movie-logo {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Estilo para dispositivos de escritorio */
+        @media (min-width: 768px) {
+            .movie-logo {
+                display: block;
+            }
+        }
+
+        /* Estilo para ocultar el logo en dispositivos móviles */
+        @media (max-width: 768px) {
+            .movie-logo {
+                display: none;
+            }
+        }
+
+        .movie-video {
+            flex: 1;
+            width: 100%;
+        }
+
+        .movie-title {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .movie-video iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .movie-info {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .movie-info div {
+            background-color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex: 1 1 calc(33.33% - 10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .movie-info i {
+            color: #1e90ff;
+        }
+
+        .movie-detail {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: justify;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            margin-top: 20px;
+        }
+
+        .recommended-section {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto 0; /* Ajuste del margen superior */
+            text-align: center;
+        }
+
+        .recommended-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .recommended-movies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .recommended-movie {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 10px;
+            width: 150px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .recommended-movie img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .recommended-movie-title {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .movie-details-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .movie-info div {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <a href="peliculas.html" class="back-button">Volver</a>
+    <a href="peliculas.html" class="back-button"><i class="fas fa-arrow-left"></i> Volver</a>
 
-    <div class="container mt-5">
-        <h1 class="text-center">Reproductor de Peliculas</h1>
-        <div id="player" class="mt-4">
-            <iframe class="shadow-lg rounded" width="100%" style="aspect-ratio:16/9;margin-bottom:20px" name="iframe" id="iframe" title="Live Video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="" scrolling="no"></iframe>
+    <div class="container">
+        <div class="movie-details-container">
+            <!-- Imagen -->
+            <img id="movie-logo" class="movie-logo" src="" alt="Logo de la película">
+
+            <!-- Video y Detalles -->
+            <div class="movie-video">
+                <!-- Título de la Película -->
+                <h1 id="movie-title" class="movie-title"></h1>
+                
+                <!-- Reproductor de Video -->
+                <iframe id="iframe" title="Reproductor de Película" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src=""></iframe>
+                
+                <!-- Información de la Película -->
+                <div class="movie-info">
+                    <div class="genre">
+                        <i class="fas fa-film"></i> <span id="movie-genre"></span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> <span id="movie-rating"></span>
+                    </div>
+                    <div class="release">
+                        <i class="fas fa-calendar-alt"></i> <span id="movie-release"></span>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- Descripción -->
+        <div id="movie-detail" class="movie-detail"></div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-   <script src="js/canales-reproductor.js"></script>
-</body>
-</html>
+    <!-- Películas Recomendadas -->
+    <div class="recommended-section">
+        <h2 class="recommended-title">Películas Recomendadas</h2>
+        <div class="recommended-movies" id="recommended-movies"></div>
+    </div>
+
+    <script>
+        async function fetchMovieData() {
+            try {
+                const response = await fetch('data/peliculas.json');
+                return await response.json();
+            } catch (error) {
+                console.error('Error al cargar los datos del JSON:', error);
+                return null;
+            }
+        }
+
+        async function loadMovieDetails() {
+            const data = await fetchMovieData();
+            if (!data) return;
+
+            const params = new URLSearchParams(window.location.search);
+            const title = decodeURIComponent(params.get('title'));
+            const movie = data.canales.find(movie => movie.title === title);
+
+            if (movie) {
+                document.getElementById('movie-logo').src = movie.img || 'default-logo.jpg';
+                document.getElementById('iframe').src = movie.url;
+                document.getElementById('movie-title').textContent = movie.title || 'Título no disponible';
+                document.getElementById('movie-genre').textContent = movie.genre || 'Género no disponible';
+                document.getElementById('movie-rating').textContent = movie.rating || 'Calificación no disponible';
+                document.getElementById('movie-release').textContent = movie.releaseDate || 'Fecha no disponible';
+                document.getElementById('movie-detail').textContent = movie.detail || 'Detalle no disponible';
+            }
+
+            // Cargar películas recomendadas
+            loadRecommendedMovies(data.canales, title);
+        }
+
+        function loadRecommendedMovies(movies, currentTitle) {
+            const recommendedContainer = document.getElementById('recommended-movies');
+            recommendedContainer.innerHTML = '';
+
+            const recommendations = movies.filter(movie => movie.title !== currentTitle).slice(0, 6);
+
+            recommendations.forEach(movie => {
+                const movieElement = document.createElement('div');
+                movieElement.classList.add('recommended-movie');
+
+                movieElement.innerHTML = `
+                    <img src="${movie.img}" alt="${movie.title}">
+                    <div class="recommended-movie-title">${movie.title}</div>
+                `;
+
+                // Evento para redireccionar a la película seleccionada
+                movieElement.addEventListener('click', () => {
+                    const newUrl = `reproductor.html?title=${encodeURIComponent(movie.title)}`;
+                    window.location.href = newUrl;
+                });
+
+                recommendedContainer.appendChild(movieElement);
+            });
+        }
+
+        loadMovieDetails();
+    </script>
