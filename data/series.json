@@ -1,63 +1,22 @@
 {
-    "canales": [
+    "series": [
         {
-            "id": "culpa-tuya",
             "title": "Culpa Tuya",
-            "img": "https://tinyurl.com/2xvoeyd9",
-            "detail": "La película Culpa Tuya retrata la intensa e inquebrantable relación de Noah y Nick, quienes intentan mantenerse juntos a pesar de las intenciones de sus padres y la aparición de viejas figuras del pasado que amenazan con destruir todo lo que ellos aman. ¿Podrán mantenerse juntos a pesar del nuevo trabajo de Noah y el ingreso a la universidad de Nick?",
-            "url": "https://tinyurl.com/2a6oyera",
-            "category": "peliculas",
-            "genre": "Romance/Drama",
-            "rating": "5.2/10",
-            "releaseDate": "18/12/25"
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl5McC-sYxdM_H8-cu2rNJzWMFhAbIoCuo_g&s",
+            "detail": "El amor entre Noah y Nick parece inquebrantable, a pesar de las maniobras de sus padres por separarles. Pero el trabajo de él y la entrada de ella en la universidad abren sus vidas a nuevas relaciones que removerán los cimientos no solo de su relación, sino de la propia familia Leister. Cuando tantas personas están dispuestas a destruir una relación, ¿puede realmente acabar bien?",
+            "url": "https://zonahack.com.ar/movie/play/'71%20-%202014/Dmon?videoUrl=https%3A%2F%2Fzonaaps-player.xyz%2Fenlaces%2Fmp4%2Fgenerated%2Fpeliculas%2F2024-12-27%2Fvideo_Culpa_tuya_1735277584.html"
         },
         {
-            "id": "kung-fu-panda-3",
-            "title": "Kung Fu Panda 3",
-            "img": "https://tinyurl.com/2dqrb5cu",
-            "detail": "Cuando el durante mucho tiempo perdido padre de Po aparece de repente, el dúo ya reunido viaja a un paraíso secreto de pandas para conocer a montones de nuevos e hilarantes osos. Pero cuando el villano sobrenatural Kai comienza a recorrer toda China venciendo a todos los maestros de kung fu, Po deberá hacer lo imposible: aprender a entrenar a una comunidad repleta de divertidos y torpes hermanos para formar el equipo definitivo de Kung Fu Pandas.",
-            "url": "https://tinyurl.com/2c4nfuzm",
-            "category": "peliculas"
+            "title": "Serie 2",
+            "img": "img/serie2.png",
+            "detail": "Descripción detallada de la Serie 2.",
+            "url": "url_serie2"
         },
         {
-            "id": "culpa-mia",
-            "title": "Culpa Mia",
-            "img": "https://tinyurl.com/2bfxwmqz",
-            "detail": "Noah debe dejar atrás su pueblo, su novio y sus amigos y mudarse a la mansión del nuevo y rico marido de su madre. Allí conoce a Nick, su nuevo hermanastro. Se enamoran perdidamente en secreto.",
-            "url": "https://tinyurl.com/26orb43h",
-            "category": "peliculas"
-        },
-        {
-            "id": "moana-2",
-            "title": "Moana 2",
-            "img": "https://tinyurl.com/22umklja",
-            "detail": "Después de recibir una llamada inesperada de sus antepasados ​​​​orientadores, Moana debe viajar a los mares lejanos de Oceanía y a aguas peligrosas y perdidas hace mucho tiempo para vivir una aventura diferente a todo lo que ha enfrentado anteriormente.",
-            "url": "https://tinyurl.com/27bwo279",
-            "category": "peliculas"
-        },
-        {
-            "id": "mufasa-el-rey-leon",
-            "title": "Mufasa: El Rey León",
-            "img": "https://tinyurl.com/2xkuua9p",
-            "detail": "En, Mufasa: El Rey León, Rafiki cuenta la leyenda de Mufasa a la joven cachorra Kiara, hija de Simba y Nala, junto a Timón y Pumba haciendo de las suyas. Contada en flashbacks, la historia nos presenta a Mufasa como un cachorro huérfano, perdido y solitario, hasta que conoce a un simpático leoncito llamado Taka, el heredero de un linaje real. Este encuentro fortuito desencadenará un extenso viaje de un extraordinario grupo de inadaptados en busca de su destino, en el que sus vínculos se pondrán a prueba mientras luchan unidos para escapar de un amenazador y letal enemigo.",
-            "url": "https://tinyurl.com/239amuf3",
-            "category": "peliculas"
-        },
-        {
-            "id": "terrifier-3",
-            "title": "Terrifier 3",
-            "img": "https://tinyurl.com/24rgswvz",
-            "detail": "Art the Clown se dispone a desatar el caos entre los desprevenidos residentes del condado de Miles mientras se quedan dormidos pacíficamente en la víspera de Navidad.",
-            "url": "https://tinyurl.com/296gyuyt",
-            "category": "peliculas"
-        },
-        {
-            "id": "365-dias",
-            "title": "365 Días",
-            "img": "https://tinyurl.com/2b37nhvw",
-            "detail": "Massimo es miembro de la familia de la mafia siciliana y Laura es directora de ventas. Ella no espera que en un viaje a Sicilia tratando de salvar su relación, Massimo la secuestrará y le dará 365 días para enamorarse de él.",
-            "url": "https://tinyurl.com/2398agnn",
-            "category": "peliculas"
+            "title": "Serie 3",
+            "img": "img/serie3.png",
+            "detail": "Descripción detallada de la Serie 3.",
+            "url": "url_serie3"
         }
     ]
 }

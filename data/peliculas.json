@@ -9,7 +9,7 @@
             "category": "peliculas",
             "genre": "Romance/Drama",
             "rating": "5.2/10",
-            "releaseDate": "18/12/25"
+            "releaseDate": "18/12/2025"
         },
         {
             "id": "kung-fu-panda-3",
@@ -17,7 +17,10 @@
             "img": "https://tinyurl.com/2dqrb5cu",
             "detail": "Cuando el durante mucho tiempo perdido padre de Po aparece de repente, el dúo ya reunido viaja a un paraíso secreto de pandas para conocer a montones de nuevos e hilarantes osos. Pero cuando el villano sobrenatural Kai comienza a recorrer toda China venciendo a todos los maestros de kung fu, Po deberá hacer lo imposible: aprender a entrenar a una comunidad repleta de divertidos y torpes hermanos para formar el equipo definitivo de Kung Fu Pandas.",
             "url": "https://tinyurl.com/2c4nfuzm",
-            "category": "peliculas"
+            "category": "peliculas",
+            "genre": "Animación/Aventura",
+            "rating": "7.1/10",
+            "releaseDate": "17/03/2016"
         },
         {
             "id": "culpa-mia",
@@ -25,7 +28,10 @@
             "img": "https://tinyurl.com/2bfxwmqz",
             "detail": "Noah debe dejar atrás su pueblo, su novio y sus amigos y mudarse a la mansión del nuevo y rico marido de su madre. Allí conoce a Nick, su nuevo hermanastro. Se enamoran perdidamente en secreto.",
             "url": "https://tinyurl.com/26orb43h",
-            "category": "peliculas"
+            "category": "peliculas",
+            "genre": "Romance/Drama",
+            "rating": "6.2/10",
+            "releaseDate": "08/06/2023"
         },
         {
             "id": "moana-2",
@@ -33,15 +39,21 @@
             "img": "https://tinyurl.com/22umklja",
             "detail": "Después de recibir una llamada inesperada de sus antepasados ​​​​orientadores, Moana debe viajar a los mares lejanos de Oceanía y a aguas peligrosas y perdidas hace mucho tiempo para vivir una aventura diferente a todo lo que ha enfrentado anteriormente.",
             "url": "https://tinyurl.com/27bwo279",
-            "category": "peliculas"
+            "category": "peliculas",
+            "genre": "Infantil/Aventura",
+            "rating": "7.6/10",
+            "releaseDate": "28/12/2024"
         },
         {
             "id": "mufasa-el-rey-leon",
             "title": "Mufasa: El Rey León",
             "img": "https://tinyurl.com/2xkuua9p",
-            "detail": "En, Mufasa: El Rey León, Rafiki cuenta la leyenda de Mufasa a la joven cachorra Kiara, hija de Simba y Nala, junto a Timón y Pumba haciendo de las suyas. Contada en flashbacks, la historia nos presenta a Mufasa como un cachorro huérfano, perdido y solitario, hasta que conoce a un simpático leoncito llamado Taka, el heredero de un linaje real. Este encuentro fortuito desencadenará un extenso viaje de un extraordinario grupo de inadaptados en busca de su destino, en el que sus vínculos se pondrán a prueba mientras luchan unidos para escapar de un amenazador y letal enemigo.",
+            "detail": "Rafiki le cuenta a Kiara, hija de Nala y Simba, la historia de Mufasa, un león huérfano y desamparado que emprende un nuevo camino vital junto a Taka. Juntos crean una alianza que se pondrá a prueba huyendo de un feroz enemigo.",
             "url": "https://tinyurl.com/239amuf3",
-            "category": "peliculas"
+            "category": "peliculas",
+            "genre": "Aventura/Animación/Familia",
+            "rating": "6.3/10",
+            "releaseDate": "19/12/2024"
         },
         {
             "id": "terrifier-3",
@@ -49,7 +61,10 @@
             "img": "https://tinyurl.com/24rgswvz",
             "detail": "Art the Clown se dispone a desatar el caos entre los desprevenidos residentes del condado de Miles mientras se quedan dormidos pacíficamente en la víspera de Navidad.",
             "url": "https://tinyurl.com/296gyuyt",
-            "category": "peliculas"
+            "category": "peliculas",
+            "genre": "Terror/Crimen",
+            "rating": "6.4/10",
+            "releaseDate": "19/09/2024"
         },
         {
             "id": "365-dias",
@@ -57,7 +72,44 @@
             "img": "https://tinyurl.com/2b37nhvw",
             "detail": "Massimo es miembro de la familia de la mafia siciliana y Laura es directora de ventas. Ella no espera que en un viaje a Sicilia tratando de salvar su relación, Massimo la secuestrará y le dará 365 días para enamorarse de él.",
             "url": "https://tinyurl.com/2398agnn",
-            "category": "peliculas"
+            "category": "peliculas",
+            "genre": "Romance/Suspenso",
+            "rating": "3.3/10",
+            "releaseDate": "07/02/2020"
+        },
+        {
+            "id": "gladiador-ii",
+            "title": "Gladiador II",
+            "img": "https://tinyurl.com/2c76gwh2",
+            "detail": "Lucio debe entrar en el Coliseo después de que los poderosos emperadores de Roma conquisten su hogar. Con rabia en el corazón, y el futuro del imperio en juego, Lucio mira al pasado para encontrar la fuerza y el honor que necesita.",
+            "url": "https://tinyurl.com/27dd9qm2",
+            "category": "peliculas",
+            "genre": "Acción/Aventura",
+            "rating": "6.6/10",
+            "releaseDate": "13/11/2024"
+        },
+        {
+            "id": "somos-marshall",
+            "title": "Somos Marshall",
+            "img": "https://tinyurl.com/29tbt97u",
+            "detail": "Cuando un accidente de avión cobra la vida de los miembros del equipo de fútbol de la Universidad Marshall y de algunos de sus aficionados, el nuevo entrenador y los jugadores supervivientes intentan mantener vivo el programa de fútbol.",
+            "url": "https://tinyurl.com/273geu5h",
+            "category": "peliculas",
+            "genre": "Deportes/Drama",
+            "rating": "7/10",
+            "releaseDate": "12/12/2006"
+        },
+        {
+            "id": "la-culpa-no-es-mia",
+            "title": "La culpa no es mía",
+            "img": "https://tinyurl.com/25gt2evr",
+            "detail": "Ahogados en deudas, dos hermanos urden un plan para estafar a una rica heredera y salvar su hogar en Nápoles, pero un amor inesperado pronto complica el plan.",
+            "url": "https://tinyurl.com/25cvazc4",
+            "category": "peliculas",
+            "genre": "Comedia/Romántico",
+            "rating": "6.1/10",
+            "releaseDate": "01/01/2025"
         }
+        
     ]
 }

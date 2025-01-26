@@ -1,53 +1,48 @@
-// Cargar el archivo JSON con las películas
-fetch('data/peliculas.json')
-  .then((response) => response.json())
-  .then((data) => renderMovies(data))
-  .catch((error) => console.error('Error cargando el JSON:', error));
+async function fetchMovies() {
+  try {
+      const response = await fetch('data/peliculas.json');
+      const data = await response.json();
+      return data.canales.filter(canal => canal.category === 'peliculas');
+  } catch (error) {
+      console.error('Error al cargar los datos:', error);
+      return [];
+  }
+}
 
-// Función para renderizar las películas
-function renderMovies(movies) {
-  const resultContainer = document.getElementById('result');
-  
-  movies.forEach((movie) => {
-    const card = document.createElement('div');
-    card.className = 'card';
-    
-    card.innerHTML = `
-      <div class="card-content">
-        <div class="card-header">
-          <h3>${movie.title}</h3>
-        </div>
-        <div class="info">
-          <p>${movie.description}</p>
-          <button class="card-btn" onclick= href = ${movie.id}')">Ver película</button>
-        </div>
+async function loadMovies() {
+  const movies = await fetchMovies();
+  const container = document.getElementById('movies-container');
+  container.innerHTML = movies.map(movie => `
+      <div class="movie-card animate__animated animate__fadeInUp">
+          <img src="${movie.img}" alt="${movie.title}">
+          <h3 class="movie-title">${movie.title}</h3>
+          <div class="movie-actions">
+              <button onclick="goToPlayer('${movie.title}', '${movie.detail}', '${movie.url}')">Ver</button>
+          </div>
       </div>
-    `;
+  `).join('');
+}
 
-    resultContainer.appendChild(card);
+function filterMovies() {
+  const searchTerm = document.getElementById('search-bar').value.toLowerCase();
+  fetchMovies().then(movies => {
+      const filteredMovies = movies.filter(movie => movie.title.toLowerCase().includes(searchTerm));
+      const container = document.getElementById('movies-container');
+      container.innerHTML = filteredMovies.map(movie => `
+          <div class="movie-card animate__animated animate__fadeInUp">
+              <img src="${movie.img}" alt="${movie.title}">
+              <h3 class="movie-title">${movie.title}</h3>
+              <div class="movie-actions">
+                  <button onclick="goToPlayer('${movie.title}', '${movie.detail}', '${movie.url}')">Ver</button>
+              </div>
+          </div>
+      `).join('');
   });
 }
 
-// Función para redirigir al reproductor con la ID de la película
-function goToPlayer(movieId) {
-  window.location.href = `peliculas-reproductor.html?movieId=${movieId}`;
+function goToPlayer(title, detail, url) {
+  const playerUrl = `peliculas-reproductor.html?title=${encodeURIComponent(title)}&detail=${encodeURIComponent(detail)}&url=${encodeURIComponent(url)}`;
+  window.location.href = playerUrl;
 }
 
-// Manejar el formulario de búsqueda
-document.getElementById('search-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const query = document.getElementById('search-input').value.trim().toLowerCase();
-  if (query) {
-    // Filtrar películas por título
-    fetch('data/peliculas.json')
-      .then((response) => response.json())
-      .then((data) => {
-        const filteredMovies = data.filter((movie) => movie.title.toLowerCase().includes(query));
-        renderMovies(filteredMovies);
-      })
-      .catch((error) => console.error('Error cargando el JSON:', error));
-  }
-});
-
-
-
+loadMovies();

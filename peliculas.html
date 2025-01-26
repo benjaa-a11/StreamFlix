@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <title>Películas</title>
     <style>
         body {
-            font-family: 'Ubuntu', sans-serif;
+            font-family: 'Ubuntu', sans-serif; /* Asegúrate de que esto esté aplicado */
             background-color: #121212;
             color: #fff;
             margin: 0;
@@ -43,7 +44,7 @@
             transition: all 0.3s ease-in-out;
         }
 
-        #search-bar:header {
+        #search-bar:focus {
             outline: none;
             border-color: #1e90ff;
         }
@@ -97,7 +98,7 @@
             margin: 0 0 10px 0;
             color: #fff;
             font-weight: bold;
-            text-transform: uppercase;
+            text-transform: none;
         }
 
         .movie-actions button {
@@ -113,6 +114,16 @@
 
         .movie-actions button:hover {
             background-color: #0056b3;
+        }
+
+        @media (max-width: 1024px) {
+            .movies-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            #search-bar {
+                width: 80%;
+            }
         }
 
         @media (max-width: 768px) {
@@ -134,6 +145,11 @@
                 width: 80%;
             }
         }
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -149,60 +165,11 @@
             <!-- Las tarjetas de películas se generarán dinámicamente aquí -->
         </div>
     </main>
+    <br><br>
 
-    <footer style="text-align: center; padding: 20px; background-color: #121212; color: #fff;">
-        Peliculas Version 1. Proximamente más actualizaciones.
-    </footer>
+    <p>Gracias por ser parte de nuestra comunidad. Próximamente, más contenido y mejoras para ti.</p>
+    <br><br>
 
-    <script>
-        async function fetchMovies() {
-            try {
-                const response = await fetch('data/peliculas.json');
-                const data = await response.json();
-                return data.canales.filter(canal => canal.category === 'peliculas');
-            } catch (error) {
-                console.error('Error al cargar los datos:', error);
-                return [];
-            }
-        }
-
-        async function loadMovies() {
-            const movies = await fetchMovies();
-            const container = document.getElementById('movies-container');
-            container.innerHTML = movies.map(movie => `
-                <div class="movie-card animate__animated animate__fadeInUp">
-                    <img src="${movie.img}" alt="${movie.title}">
-                    <h3 class="movie-title">${movie.title}</h3>
-                    <div class="movie-actions">
-                        <button onclick="goToPlayer('${movie.title}', '${movie.detail}', '${movie.url}')">Ver</button>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function filterMovies() {
-            const searchTerm = document.getElementById('search-bar').value.toLowerCase();
-            fetchMovies().then(movies => {
-                const filteredMovies = movies.filter(movie => movie.title.toLowerCase().includes(searchTerm));
-                const container = document.getElementById('movies-container');
-                container.innerHTML = filteredMovies.map(movie => `
-                    <div class="movie-card animate__animated animate__fadeInUp">
-                        <img src="${movie.img}" alt="${movie.title}">
-                        <h3 class="movie-title">${movie.title}</h3>
-                        <div class="movie-actions">
-                            <button onclick="goToPlayer('${movie.title}', '${movie.detail}', '${movie.url}')">Ver</button>
-                        </div>
-                    </div>
-                `).join('');
-            });
-        }
-
-        function goToPlayer(title, detail, url) {
-            const playerUrl = `peliculas-reproductor.html?title=${encodeURIComponent(title)}&detail=${encodeURIComponent(detail)}&url=${encodeURIComponent(url)}`;
-            window.location.href = playerUrl;
-        }
-
-        loadMovies();
-    </script>
+    <script src="js/peliculas.js"></script>
 </body>
 </html>
