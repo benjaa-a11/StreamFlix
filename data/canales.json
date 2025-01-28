@@ -86,7 +86,7 @@
             "title": "Telefe",
             "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Telefe_%28nuevo_logo%29.png/320px-Telefe_%28nuevo_logo%29.png",
             "detail": "El Canal 11 de Buenos Aires es una estación de televisión abierta argentina que transmite desde la ciudad de Buenos Aires. La emisora se llega a ver en todo el Gran Buenos Aires y zonas aledañas.",
-            "url": "https://television-libre.net/html/fl/?get=VGVsZWZlSEQ=",
+            "url": "https://telefe.com/Api/Videos/GetSourceUrl/694564/0/HLS?.m3u8=",
             "category": "television"
         },          
         {
@@ -94,7 +94,7 @@
             "title": "El Trece",
             "img": "https://television-libre.net/img/eltrece.webp",
             "detail": "El Canal 13 es una estación de televisión abierta argentina que transmite desde la ciudad de Buenos Aires. La emisora se llega a ver en todo el Gran Buenos Aires y zonas aledañas.",
-            "url": "https://television-libre.net/html/fl/?get=RWxUcmVjZQ==",
+            "url": "https://live-01-02-eltrece.vodgc.net/eltrecetv/index.m3u8",
             "category": "television"
         },
         {
