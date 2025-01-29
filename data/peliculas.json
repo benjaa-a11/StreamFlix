@@ -3,7 +3,7 @@
         {
             "id": "culpa-tuya",
             "title": "Culpa Tuya",
-            "img": "https://tinyurl.com/2xvoeyd9",
+            "img": "/assets/peliculas/culpa-tuya.webp",
             "detail": "La película Culpa Tuya retrata la intensa e inquebrantable relación de Noah y Nick, quienes intentan mantenerse juntos a pesar de las intenciones de sus padres y la aparición de viejas figuras del pasado que amenazan con destruir todo lo que ellos aman. ¿Podrán mantenerse juntos a pesar del nuevo trabajo de Noah y el ingreso a la universidad de Nick?",
             "url": "https://tinyurl.com/2a6oyera",
             "category": "peliculas",
@@ -14,7 +14,7 @@
         {
             "id": "kung-fu-panda-3",
             "title": "Kung Fu Panda 3",
-            "img": "https://tinyurl.com/2dqrb5cu",
+            "img": "/assets/peliculas/kung-fu-panda-3.webp",
             "detail": "Cuando el durante mucho tiempo perdido padre de Po aparece de repente, el dúo ya reunido viaja a un paraíso secreto de pandas para conocer a montones de nuevos e hilarantes osos. Pero cuando el villano sobrenatural Kai comienza a recorrer toda China venciendo a todos los maestros de kung fu, Po deberá hacer lo imposible: aprender a entrenar a una comunidad repleta de divertidos y torpes hermanos para formar el equipo definitivo de Kung Fu Pandas.",
             "url": "https://tinyurl.com/2c4nfuzm",
             "category": "peliculas",
@@ -25,7 +25,7 @@
         {
             "id": "culpa-mia",
             "title": "Culpa Mia",
-            "img": "https://tinyurl.com/2bfxwmqz",
+            "img": "/assets/peliculas/culpa-mia.webp",
             "detail": "Noah debe dejar atrás su pueblo, su novio y sus amigos y mudarse a la mansión del nuevo y rico marido de su madre. Allí conoce a Nick, su nuevo hermanastro. Se enamoran perdidamente en secreto.",
             "url": "https://tinyurl.com/26orb43h",
             "category": "peliculas",
@@ -36,7 +36,7 @@
         {
             "id": "moana-2",
             "title": "Moana 2",
-            "img": "https://tinyurl.com/22umklja",
+            "img": "/assets/peliculas/moana-2.webp",
             "detail": "Después de recibir una llamada inesperada de sus antepasados ​​​​orientadores, Moana debe viajar a los mares lejanos de Oceanía y a aguas peligrosas y perdidas hace mucho tiempo para vivir una aventura diferente a todo lo que ha enfrentado anteriormente.",
             "url": "https://tinyurl.com/27bwo279",
             "category": "peliculas",
@@ -47,7 +47,7 @@
         {
             "id": "mufasa-el-rey-leon",
             "title": "Mufasa: El Rey León",
-            "img": "https://tinyurl.com/2xkuua9p",
+            "img": "/assets/peliculas/mufasa-el-rey-leon.webp",
             "detail": "Rafiki le cuenta a Kiara, hija de Nala y Simba, la historia de Mufasa, un león huérfano y desamparado que emprende un nuevo camino vital junto a Taka. Juntos crean una alianza que se pondrá a prueba huyendo de un feroz enemigo.",
             "url": "https://tinyurl.com/239amuf3",
             "category": "peliculas",
@@ -58,7 +58,7 @@
         {
             "id": "terrifier-3",
             "title": "Terrifier 3",
-            "img": "https://tinyurl.com/24rgswvz",
+            "img": "/assets/peliculas/terrifier-3.webp",
             "detail": "Art the Clown se dispone a desatar el caos entre los desprevenidos residentes del condado de Miles mientras se quedan dormidos pacíficamente en la víspera de Navidad.",
             "url": "https://tinyurl.com/296gyuyt",
             "category": "peliculas",
@@ -69,7 +69,7 @@
         {
             "id": "365-dias",
             "title": "365 Días",
-            "img": "https://tinyurl.com/2b37nhvw",
+            "img": "/assets/peliculas/365-dias.webp",
             "detail": "Massimo es miembro de la familia de la mafia siciliana y Laura es directora de ventas. Ella no espera que en un viaje a Sicilia tratando de salvar su relación, Massimo la secuestrará y le dará 365 días para enamorarse de él.",
             "url": "https://tinyurl.com/2398agnn",
             "category": "peliculas",
@@ -78,9 +78,9 @@
             "releaseDate": "07/02/2020"
         },
         {
-            "id": "gladiador-ii",
+            "id": "gladiador-2",
             "title": "Gladiador II",
-            "img": "https://tinyurl.com/2c76gwh2",
+            "img": "/assets/peliculas/gladiador-2.webp",
             "detail": "Lucio debe entrar en el Coliseo después de que los poderosos emperadores de Roma conquisten su hogar. Con rabia en el corazón, y el futuro del imperio en juego, Lucio mira al pasado para encontrar la fuerza y el honor que necesita.",
             "url": "https://tinyurl.com/27dd9qm2",
             "category": "peliculas",
@@ -91,7 +91,7 @@
         {
             "id": "somos-marshall",
             "title": "Somos Marshall",
-            "img": "https://tinyurl.com/29tbt97u",
+            "img": "/assets/peliculas/somos-marshall.webp",
             "detail": "Cuando un accidente de avión cobra la vida de los miembros del equipo de fútbol de la Universidad Marshall y de algunos de sus aficionados, el nuevo entrenador y los jugadores supervivientes intentan mantener vivo el programa de fútbol.",
             "url": "https://tinyurl.com/273geu5h",
             "category": "peliculas",
@@ -102,14 +102,70 @@
         {
             "id": "la-culpa-no-es-mia",
             "title": "La culpa no es mía",
-            "img": "https://tinyurl.com/25gt2evr",
+            "img": "/assets/peliculas/la-culpa-no-es-mia.webp",
             "detail": "Ahogados en deudas, dos hermanos urden un plan para estafar a una rica heredera y salvar su hogar en Nápoles, pero un amor inesperado pronto complica el plan.",
-            "url": "https://tinyurl.com/5bd2uute",
+            "url": "https://tinyurl.com/25cvazc4",
             "category": "peliculas",
             "genre": "Comedia/Romántico",
             "rating": "6.1/10",
             "releaseDate": "01/01/2025"
+        },
+        {
+            "id": "cars-3",
+            "title": "Cars 3",
+            "img": "/assets/peliculas/cars-3.webp",
+            "detail": "Rayo McQueen se propone demostrar a una nueva generación de corredores que sigue siendo el mejor auto de carreras del mundo.",
+            "url": "https://tinyurl.com/25c8qwjm",
+            "category": "peliculas",
+            "genre": "Infantil/Deportes",
+            "rating": "6.7/10",
+            "releaseDate": "13/07/2017"
+        },
+        {
+            "id": "ratatouille",
+            "title": "Ratatouille",
+            "img": "/assets/peliculas/ratatouille.webp",
+            "detail": "Una rata que sabe cocinar hace una alianza inusual con un joven trabajador de cocina en un famoso restaurante de París.",
+            "url": "https://mx9skjnui4es.premilkyway.com/hls2/01/03544/98ii70epwpkf_,n,h,.urlset/master.m3u8?t=SWjPWcGLKuKWsPG32ZEdVysZRI1-cw4xYJJz-nAPwbs&s=1737884078&e=129600&f=38679468&srv=3FjgDmcnea8S35m&i=0.4&sp=500&p1=3FjgDmcnea8S35m&p2=3FjgDmcnea8S35m&asn=270060",
+            "category": "peliculas",
+            "genre": "Infantil/Comedia",
+            "rating": "7.3/10",
+            "releaseDate": "28/07/2007"
+        },
+        {
+            "id": "aceptados",
+            "title": "Aceptados",
+            "img": "/assets/peliculas/aceptados.webp",
+            "detail": "Todos los estudiantes de secundaria están a expensas de recibir las cartas de las universidades alas que han sido admitidos, menos un perezoso joven que ha hecho caso omiso a todas las cartas. Su plan es crear el su propia escuela sin que sus padres se enteren. Le pondrá el nombre de South Harmon Institute of Technology donde la ausencia de normas terminará pasando factura.",
+            "url": "https://tinyurl.com/252z4e5c",
+            "category": "peliculas",
+            "genre": "Comedia",
+            "rating": "6.4/10",
+            "releaseDate": "09/02/2007"
+        },
+        {
+            "id": "intensa-mente",
+            "title": "Intensa mente",
+            "img": "/assets/peliculas/intensamente.webp",
+            "detail": "Las cinco emociones que conviven en el interior de una niña llamada Riley, alegría, miedo, desagrado, ira y tristeza, compiten por tomar el control de sus acciones cuando la pequeña se traslada, junto a su familia, a vivir a San Francisco. La adaptación a una nueva ciudad, una nueva escuela y unos nuevos compañeros no será sencilla para Riley.",
+            "url": "https://tinyurl.com/2dyex4az",
+            "category": "peliculas",
+            "genre": "Infantil/Comedia",
+            "rating": "8.5/10",
+            "releaseDate": "19/07/2015"
+        },
+        {
+            "id": "intensa-mente-2",
+            "title": "Intensa mente 2",
+            "img": "/assets/peliculas/intensamente-2.webp",
+            "detail": "Ahora que es adolescente, Riley experimenta nuevos sentimientos como Ansiedad y Envidia, que se imponen a los viejos mientras ella duda sobre si abandonar a sus antiguas amigas por otras de la escuela secundaria.",
+            "url": "https://tinyurl.com/279hz44y",
+            "category": "peliculas",
+            "genre": "Infantil/Comedia",
+            "rating": "7.6/10",
+            "releaseDate": "14/06/2024"
         }
+
         
     ]
 }
